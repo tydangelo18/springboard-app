@@ -1,7 +1,11 @@
+html {
+  height: 100%;
+}
 
 body {
   background-image: url("restaurant.jpg");
   background-size: cover;
+  min-height: 100%;
 }
 
 .title {

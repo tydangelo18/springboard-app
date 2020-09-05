@@ -79,7 +79,9 @@
     <!-----------  Webpage body content --------->
     <section class="section">
 
+        <!--Title-->
         <h1 class="title is-1" id="homeTitle">What City Are You Exploring?</h1>
+        
         <!-----Search Bar------>
         <div class="block">
             <div class="field has-addons">
@@ -98,37 +100,35 @@
         <!--JQuery will manipulate the DOM to display the inputted city from the search bar-->
         <h1 class="title is-3" id="cityTitle"></h1>
 
-        <!-- Homepage cards after the city is inputted by the user-->
-
-        <div class="container" id="navCardContainer">
-            <div class="restaurant_container" id="optionOne">
-                <a class="restaurant-page" href="restaurants.html" id="restaurant-link">
-                    <h2 class="title is-4" id="optionOneTitle">Restaurants</h2>
-                    <img src="./assets/restaurant_homepage.jpeg" alt="Restaurants homepage" class="hp_restaurant"
-                        style="width: 300px; height: 250px;">
-                </a>
-            </div>
-
-            <div class="events_container" id="optionTwo">
-                <a class="events-page" href="events.html" id="events-link">
-                    <h2 class="title is-4" id="optionTwoTitle">Events</h2>
-                    <img src="./assets/events_homepage.jpg" alt="Events homepage" class="hp_event"
-                        style="width: 300px; height: 250px;">
-                </a>
-            </div>
-
-            <div class="weather_container" id="optionThree">
-                <a class="weather-page" href="weather.html" id="weather-link">
-                    <h2 class="title is-4" id="optionThreeTitle">Weather</h2>
-                    <img src="./assets/weather_homepage.jpeg" alt="Weather homepage" class="hp_weather"
-                        style="width: 300px; height: 250px;">
-                </a>
-            </div>
-        </div>
-
     </section>
 
-    <!---------  Removed Footer    -------->
+    
+
+    <section>
+        <div class="imageContainer">
+            <div>
+                <div class="container" id="imageDiv">
+                    <img src="./assets/restaurant_homepage.jpeg" alt="image" class="image" id="foodImage">
+                    <div class="overlay overlayLeft">
+                        <div class="text" id="overlayText">Find Restaurants</div>
+                    </div>
+                </div> 
+                <div class="container" id="imageDiv">
+                    <img src="./assets/events_homepage.jpg" alt="image" class="image" id="foodImage">
+                    <div class="overlay overlayLeft">
+                        <div class="text" id="overlayText">Attend Events</div>
+                    </div>
+                </div>
+                <div class="container" id="imageDiv">
+                    <img src="./assets/weather_homepage.jpeg" alt="image" class="image" id="foodImage">
+                    <div class="overlay overlayLeft">
+                        <div class="text" id="overlayText">Get Weather</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
 
 </body>
 

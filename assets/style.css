@@ -1,6 +1,11 @@
-body{
+html {
+  height: 100%;
+}
+
+body {
   background-image: url("homepage.jpg");
   background-size: cover;
+  min-height: 100%;
 }
 
 
@@ -118,3 +123,62 @@ body{
     align-items: center;
   }
 }
+
+
+/* Image Overlay */
+
+.imageContainer {
+  display: flex;
+  justify-content: center;
+}
+
+#imageDiv {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  display: inline-block;
+}
+
+#foodImage {
+  display: block;
+  width: 200px;
+  height: 200px;
+  object-fit: fill;
+}
+
+.overlay {
+  position: absolute;
+  transition: all .3s ease;
+  opacity: 0;
+  background-color: #eeeeee;
+}
+
+#imageDiv:hover .overlay {
+  opacity: 1;
+}
+
+#overlayText {
+  color: #ffffff;
+  font-family: sans-serif;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+}
+
+.overlayLeft {
+  height: 100%;
+  width: 0%;
+  top: 0;
+  left: 0;
+  background-color: red;
+
+}
+
+#imageDiv:hover .overlayLeft {
+  width: 100%;
+
+}
+
+
