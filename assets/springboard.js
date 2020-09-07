@@ -850,10 +850,10 @@ $(document).ready(function () {
   $(".search-button").on("click", function currentCity() {
     event.preventDefault();
     
-    if ($(".search-input")[0].value === '') {
-      searchInput = $(".search-input")[1].value; event.target.parentElement.parentElement.children[0].children[0].value;
+    if ($(".search-bar")[0].value === '') {
+      searchInput = $(".search-bar")[1].value; event.target.parentElement.parentElement.children[0].children[0].value;
    } else {
-     searchInput = $(".search-input").val(); event.target.parentElement.parentElement.children[0].children[0].value;
+     searchInput = $(".search-bar").val(); event.target.parentElement.parentElement.children[0].children[0].value;
    } 
 
     let citiesURL = "https://developers.zomato.com/api/v2.1/cities?q=" + searchInput;

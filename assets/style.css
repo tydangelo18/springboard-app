@@ -1,184 +1,319 @@
-html {
-  height: 100%;
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
 }
 
 body {
-  background-image: url("homepage.jpg");
-  background-size: cover;
-  min-height: 100%;
+  font-family: sans-serif;
 }
 
+nav {
+  background: #ed5050;
+  height: 80px;
+  width: 100%;
+}
 
-.title {
+label.logo {
   color: white;
-  align-items: center;
-  text-align: center;
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: bold;
 }
+
+nav ul {
+  float: right;
+  margin-right: 20px;
+}
+
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+
+nav ul li a {
+  color: white;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+
+}
+
+a.active,a:hover {
+  background: #d23c3c;
+  transition: .5s;
+}
+
+.checkBtn {
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+#check {
+  display: none;
+}
+
+#top-content {
+  background-image: url('./homepage.jpg');
+  background-size: cover;
+  position: absolute;
+  min-width: 100vw;
+  min-height: 40vh;
+}
+
+#searchBar {
+  border-radius: 25px 0 0 25px;
+  padding: 0 5px;
+  height: 22px;
+  width: 120px;
+  border: none;
+  outline: none;
+}
+
+#searchBtn {
+  border-radius: 0 25px 25px 0;
+  padding: 0 5px;
+  position: relative;
+  left: -5px;
+  height: 22px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: white;
+  color: #ed5050;
+  border-left: 1px solid #ed5050;
+}
+
+#searchBtn:hover {
+  background:#d23c3c;
+  color: white;
+}
+
+#mainsearchBar {
+  border-radius: 25px 0 0 25px;
+  padding: 0 5px;
+  height: 40px;
+  width: 300px;
+  border: 1px solid #ed5050;
+  outline: none;
+}
+
+#mainsearchBtn {
+  border-radius: 0 25px 25px 0;
+  padding: 0 5px;
+  position: relative;
+  left: -5px;
+  height: 40px;
+  width: 100px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: #ed5050;
+  color: white;
+}
+
+#mainsearchBtn:hover {
+  background:#d23c3c;
+  color: white;
+}
+
+#exploreDiv, #mainsearchBarDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+}
+
+#exploreDiv {
+  line-height: 1.7;
+}
+
+#exploreDiv h1 {
+  color:white;
+  font-size: 50px;
+  opacity: 0;
+  position: relative;
+  animation-name: title;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+}
+
+#cityTitle {
+  color: white;
+  font-size: 35px;
+}
+
+@keyframes title {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+#cardDiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 10px;
+  min-width: 100vw;
+  min-height: 50vh;
+  position: absolute;
+  bottom: 0;
+}
+
 
 .container {
-  display: flex;
-  justify-content: space-around;
-  padding-top: 10px;
-}
-
-.city {
-  text-align: center;
-  margin-bottom: 30px;
-  margin-top: 40px;
-  padding-top: 10px;
-}
-
-/* Search Bar */
-.field.has-addons {
-  display: flex;
-  justify-content: center;
-}
-
-/* Logo (Top Left) */
-#springLogo {
-  color: #ffffff;
-}
-
-/* nav bar search bar*/
-.field:not(:last-child) {
-  margin-bottom: 0rem;
-  margin-top: 1rem;
-  margin-right: 1rem;
-}
-
-#homeBar {
-  width: 32rem;
-}
-
-#navBarSearch {
-  width: 7rem;
-}
-
-.hp_restaurant {
-  box-shadow: 4px 4px rgb(148, 140, 140);
-}
-
-.hp_event {
-  box-shadow: 4px 4px rgb(148, 140, 140);
-}
-
-.hp_weather {
-  box-shadow: 4px 4px rgb(148, 140, 140);
-}
-
-@media only screen and (max-width: 1023px) {
-  /* For mobile phones: */
-  
-  .navbar {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    vertical-align: middle;
-    
-  } 
-  
-  .navbar-menu {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    vertical-align: middle;
-    background-color: transparent;
-    max-width: max-content;
-  }
-
-  .navbar-end {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    max-width: 0px;
-  }
-
-  .navbar-item {
-    max-width: 5px;
-  }
-
-  .icon {
-    color: white;
-  }
-
-  .navbar-brand {
-    margin-right: 12rem;
-  }
-
-  .field:not(:last-child) {
-    margin-bottom: 0rem;
-    margin-top: 0.5rem;
-    margin-right: 1rem;
-  }
-
-  #springLogo {
-    font-size: 36px;
-    position: inherit;
-    margin-right: 30px;
-  }
-
-  .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-}
-
-
-/* Image Overlay */
-
-.imageContainer {
-  display: flex;
-  justify-content: center;
-}
-
-#imageDiv {
   position: relative;
-  width: 200px;
-  height: 200px;
-  display: inline-block;
+  width: 300px;
+  height: 300px;
+  margin: 45px;
 }
 
-#foodImage {
+.image {
   display: block;
-  width: 200px;
-  height: 200px;
-  object-fit: fill;
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
 }
 
 .overlay {
   position: absolute;
-  transition: all .3s ease;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
   opacity: 0;
-  background-color: #eeeeee;
+  transition: .5s ease;
+  background-color: #ed5050;
 }
 
-#imageDiv:hover .overlay {
+.container:hover .overlay {
   opacity: 1;
 }
 
-#overlayText {
-  color: #ffffff;
-  font-family: sans-serif;
+.text {
+  color: white;
+  font-size: 20px;
   position: absolute;
   top: 50%;
   left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  font-size: 20px;
+  text-align: center;
 }
 
-.overlayLeft {
-  height: 100%;
-  width: 0%;
-  top: 0;
+#eatsCard {
+  opacity: 0;
+  position: relative;
+  animation-name: eats;
+  animation-duration: 2.5s;
+  animation-delay: .75s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes eats {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+
+#eventsCard {
+  opacity: 0;
+  position: relative;
+  animation-name: events;
+  animation-duration: 2.5s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes events {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+#weatherCard {
+  opacity: 0;
+  position: relative;
+  animation-name: weather;
+  animation-duration: 2.5s;
+  animation-delay: 1.25s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes weather {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+.footer {
+  position: fixed;
   left: 0;
-  background-color: red;
-
-}
-
-#imageDiv:hover .overlayLeft {
+  bottom: 0;
   width: 100%;
-
+  background-color: #ed5050;
+  color: white;
+  text-align: center;
 }
+
+@media (max-width: 952px) {
+  label.logo {
+      font-size: 30px;
+      padding-left: 50px;
+  }
+
+  nav ul li a {
+      font-size: 16px;
+  }
+}
+
+@media (max-width: 858px) {
+  .checkBtn {
+      display: block;
+  }
+
+  ul {
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background: #ed5050;
+      top: 80px;
+      left: -100%;
+      text-align: center;
+      transition: all .5s;
+  }
+
+  nav ul li {
+      display: block;
+      margin: 50px 0;
+      line-height: 30px;
+  }
+
+  nav ul li a {
+      font-size: 20px;
+  }
+
+  a:hover,a,active {
+      background: none;
+      color: #d23c3c;
+  }
+
+  #check:checked ~ ul {
+      left: 0;
+  }
+}
+
+
+
+
 
 
