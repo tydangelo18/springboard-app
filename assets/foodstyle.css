@@ -1,11 +1,101 @@
-html {
-  height: 100%;
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
 }
 
 body {
-  background-image: url("restaurant.jpg");
+  font-family: sans-serif;
+}
+
+nav {
+  background: #ed5050;
+  height: 80px;
+  width: 100%;
+}
+
+label.logo {
+  color: white;
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: bold;
+}
+
+nav ul {
+  float: right;
+  margin-right: 20px;
+}
+
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+
+nav ul li a {
+  color: white;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+
+}
+
+a.active,a:hover {
+  background: #d23c3c;
+  transition: .5s;
+}
+
+.checkBtn {
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+#check {
+  display: none;
+}
+
+#top-content {
+  background-image: url('./restaurant.jpg');
   background-size: cover;
-  min-height: 100%;
+  position: absolute;
+  min-width: 100vw;
+  min-height: 40vh;
+}
+
+#searchBar {
+  border-radius: 25px 0 0 25px;
+  padding: 0 5px;
+  height: 22px;
+  width: 120px;
+  border: none;
+  outline: none;
+}
+
+#searchBtn {
+  border-radius: 0 25px 25px 0;
+  padding: 0 5px;
+  position: relative;
+  left: -5px;
+  height: 22px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: white;
+  color: #ed5050;
+  border-left: 1px solid #ed5050;
+}
+
+#searchBtn:hover {
+  background:#d23c3c;
+  color: white;
 }
 
 .title {
@@ -34,20 +124,8 @@ body {
   z-index: 99;
  }
   
- .navbar-items span {
-  display: block;
-  width: 19px;
-  height: 3px;
-  margin: 4px 0;
-  background: rgb(0,0,0);
-  z-index: 99;
- }
-  
- .responsive-menu{
-  display: none;
- }
-  
- .expand {
+
+.expand {
   display: block !important; 
  }
 
@@ -112,15 +190,15 @@ body {
   margin: 50px;
 }
 
-.nav-container {
-  display: flex;
-  justify-content: space-around;
-}
-
 .mid-page {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 10px;
+  min-width: 100vw;
+  min-height: 50vh;
+  position: absolute;
+  bottom: 0;
 }
 
 .box {
@@ -133,21 +211,6 @@ body {
   font-size: 10px;
 }
 
-/* Logo (Top Left) */
-#springLogo {
-  color: #ffffff;
-}
-
-/* nav bar search bar*/
-.field:not(:last-child) {
-  margin-bottom: 0rem;
-  margin-top: 1rem;
-  margin-right: 1rem;
-}
-
-#navBarSearch {
-  width: 7rem;
-}
 
 .menu{
   overflow-y: scroll;
@@ -161,55 +224,18 @@ body {
   margin-bottom: 10px;
 }
 
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #ed5050;
+  color: white;
+  text-align: center;
+}
+
 @media only screen and (max-width: 1023px) {
   /* For mobile phones: */
-  
-  .navbar {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-     
-  } 
-  
-  .navbar-menu {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: transparent;
-    max-width: inherit;
-  }
-
-  .navbar-end {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    max-width: 0px;
-  }
-
-  .navbar-item {
-    max-width: 5px;
-  }
-
-  .icon {
-    color: white;
-  }
-
-  .navbar-brand {
-    margin-right: 12rem;
-  }
-
-  .field:not(:last-child) {
-    margin-bottom: 0rem;
-    margin-top: 0.5rem;
-    margin-right: 1rem;
-  }
-
-  #springLogo {
-    font-size: 36px;
-    position: inherit;
-    margin-right: 30px;
-  }
-
   .food_container {
     display: flex;
     flex-direction: column;
@@ -218,4 +244,40 @@ body {
     
   }
 
+}
+
+@media (max-width: 858px) {
+  .checkBtn {
+      display: block;
+  }
+
+  ul {
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background: #ed5050;
+      top: 80px;
+      left: -100%;
+      text-align: center;
+      transition: all .5s;
+  }
+
+  nav ul li {
+      display: block;
+      margin: 50px 0;
+      line-height: 30px;
+  }
+
+  nav ul li a {
+      font-size: 20px;
+  }
+
+  a:hover,a,active {
+      background: none;
+      color: #d23c3c;
+  }
+
+  #check:checked ~ ul {
+      left: 0;
+  }
 }

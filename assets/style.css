@@ -217,7 +217,7 @@ a.active,a:hover {
   position: relative;
   animation-name: eats;
   animation-duration: 2.5s;
-  animation-delay: .75s;
+  animation-delay: 1s;
   animation-fill-mode: forwards;
 }
 
@@ -232,7 +232,7 @@ a.active,a:hover {
   position: relative;
   animation-name: events;
   animation-duration: 2.5s;
-  animation-delay: 1s;
+  animation-delay: 1.5s;
   animation-fill-mode: forwards;
 }
 
@@ -246,7 +246,7 @@ a.active,a:hover {
   position: relative;
   animation-name: weather;
   animation-duration: 2.5s;
-  animation-delay: 1.25s;
+  animation-delay: 2s;
   animation-fill-mode: forwards;
 }
 
