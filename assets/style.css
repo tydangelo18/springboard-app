@@ -326,19 +326,21 @@ a.active,a:hover {
   }
 }
 
-@media (min-height: 625px) {
-  #cardDiv {
-    margin-top: 300px;
-    
-  }
-}
-@media (min-height: 756px) {
+@media (min-height: 667px) {
   #cardDiv {
     margin-top: 400px;
     
   }
-} 
+}
 
+@media (min-width: 359px) {
+  #mainsearchBar {
+    width: 200px;
+  }
+
+  #mainsearchBtn {
+    width: 75px;
+}
 
 
 
