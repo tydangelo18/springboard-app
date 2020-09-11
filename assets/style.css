@@ -161,10 +161,10 @@ a.active,a:hover {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin-top: 10px;
+  margin-top: 240px;
   min-width: 100vw;
   min-height: 50vh;
-  position: absolute;
+  position: relative;
   bottom: 0;
 }
 
@@ -265,6 +265,14 @@ a.active,a:hover {
   text-align: center;
 }
 
+/* Media Queries*/
+@media (max-width: 1177px) {
+  .container {
+    margin: 5px;
+  }
+}
+
+
 @media (max-width: 952px) {
   label.logo {
       font-size: 30px;
@@ -273,6 +281,12 @@ a.active,a:hover {
 
   nav ul li a {
       font-size: 16px;
+  }
+
+  #cardDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
 
@@ -311,6 +325,19 @@ a.active,a:hover {
       left: 0;
   }
 }
+
+@media (min-height: 625px) {
+  #cardDiv {
+    margin-top: 300px;
+    
+  }
+}
+@media (min-height: 756px) {
+  #cardDiv {
+    margin-top: 400px;
+    
+  }
+} 
 
 
 
