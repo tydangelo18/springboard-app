@@ -181,6 +181,7 @@ a.active,a:hover {
   width: 300px;
   height: 300px;
   object-fit: cover;
+  box-shadow: 2px 2px #989898;
 }
 
 .overlay {
@@ -266,13 +267,6 @@ a.active,a:hover {
 }
 
 /* Media Queries*/
-@media (max-width: 1177px) {
-  .container {
-    margin: 5px;
-  }
-}
-
-
 @media (max-width: 952px) {
   label.logo {
       font-size: 30px;
@@ -283,10 +277,8 @@ a.active,a:hover {
       font-size: 16px;
   }
 
-  #cardDiv {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  .container {
+    margin: 5px;
   }
 }
 
@@ -323,6 +315,12 @@ a.active,a:hover {
 
   #check:checked ~ ul {
       left: 0;
+  }
+
+  #cardDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
 
