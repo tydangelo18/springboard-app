@@ -1,90 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Springboard - Events</title>
-    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
-    <script src="https://kit.fontawesome.com/db5e26bbb4.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
-        <link rel="stylesheet" href="./assets/eventstyle.css">
-</head>
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"
+    ></script>
 
-<body>
-    <!--Navigation Bar-->
-    <div class="block" id="navbarBlock">
-        <nav class="navbar is-danger" role="navigation" aria-label="main navigation" id="navbar">
-            <div class="navbar-brand">
-                <a class="navbar-item" id="navbarLogo" href="index.html">
-                    <h1 class="title is-4" id="springLogo"><strong>Springboard</strong></h1>
-                </a>
-            </div>
+    <script
+      src="https://kit.fontawesome.com/db5e26bbb4.js"
+      crossorigin="anonymous"
+    ></script>
 
-            <div id="navbarBasicExample" class="navbar-menu" id="navBtns">
-                <div class="navbar-end">
-                    <div class="field has-addons">
-                        <p class="control has-icons-left" id="navBarSearch">
-                            <input class="input search-input is-small is-rounded" type="text"
-                                placeholder="Pick a City...">
-                            <span class="icon is-small is-left">
-                                <i class="fas fa-city"></i>
-                            </span>
-                        </p>
-                        <p class="control">
-                            <a href="" class="button search-button is-small is-rounded">Explore</a>
-                        </p>
-                    </div>
-                    <a class="navbar-item" href="index.html" id="homeBtn">
-                        <span class="icon">
-                            <!--Each Icon will navigate the user to the corresponding page-->
-                            <i class="fas fa-home"></i>
-                        </span>
-                    </a>
-                    <a class="navbar-item" href="restaurants.html" id="eatBtn">
-                        <span class="icon">
-                            <!--Each Icon will navigate the user to the corresponding page-->
-                            <i class="fas fa-utensils"></i>
-                        </span>
-                    </a>
-                    <a class="navbar-item" href="events.html" id="eventBtn">
-                        <span class="icon">
-                            <!--Each Icon will navigate the user to the corresponding page-->
-                            <i class="fas fa-ticket-alt"></i>
-                        </span>
-                    </a>
-                    
-                </div>
-        </nav>
-    </div>
+    <link rel="stylesheet" href="./assets/eventstyle.css" />
+  </head>
 
-    <section class="section">
-        <div class="topdiv">
-            <h1 class="title is-1" id="eventTitle">Events</h1>
-            <!--JQuery will manipulate the DOM to display the inputted city from the search bar-->
-            <h1 class="title is-3" id="cityTitle"></h1>
-
-        </div>
-
-
+  <body>
+    <section>
+      <!--NavBar-->
+      <nav>
+        <input type="checkbox" id="check" />
+        <label for="check" class="checkBtn">
+          <i class="fas fa-bars"></i>
+        </label>
+        <label class="logo" id="springLogo">Springboard</label>
+        <ul>
+          <li>
+            <form id="navBarSearch">
+              <input
+                type="text"
+                name=""
+                placeholder="Pick a City..."
+                class="search-bar"
+                id="searchBar"
+              />
+              <input
+                type="submit"
+                name=""
+                value="Explore"
+                class="search-button"
+                id="searchBtn"
+              />
+            </form>
+          </li>
+          <li>
+            <a class="navbar-item" href="./index.html" id="homeBtn">
+              <span class="icon">
+                <!--Each Icon will navigate the user to the corresponding page-->
+                <i class="fas fa-home"></i>
+              </span>
+            </a>
+          </li>
+          <li>
+            <a class="navbar-item" href="./restaurants.html" id="eatBtn">
+              <span class="icon">
+                <!--Each Icon will navigate the user to the corresponding page-->
+                <i class="fas fa-utensils"></i>
+              </span>
+            </a>
+          </li>
+          <li>
+            <a class="navbar-item" href="./events.html" id="eventBtn">
+              <span class="icon">
+                <!--Each Icon will navigate the user to the corresponding page-->
+                <i class="fas fa-ticket-alt"></i>
+              </span>
+            </a>
+          </li>
+        </ul>
+      </nav>
     </section>
 
+    <section class="section">
+      <div id="top-content">
+        <div class="topdiv">
+          <h1 class="title is-1" id="eventTitle">Events</h1>
+          <!--JQuery will manipulate the DOM to display the inputted city from the search bar-->
+          <h1 class="title is-3" id="cityTitle"></h1>
+        </div>
+      </div>
+    </section>
 
     <!--     <div class="event-container is-vcentered" id="eventContainer">
         <div class="block">
             <div class="columns"> -->
 
     <!--Events Cards-->
-    <div class="container">
-        <div class="row">
+    <div id="cardDiv">
+        <div id="eventBox">
             <div class="col-xs-1"></div>
             <div class="col-xs-6 col-md-10">
-                <div id='events-panel' class="panel" style="background-color: #f14668;">
-                    <div class="panel-heading" style="background-color: #f14668;">
+                <div id='events-panel' class="panel" >
+                    <div class="panel-heading" >
                         <h3 class="panel-title title">Checkout what's happening</h3>
                     </div>
                     <div class="panel-body">
@@ -124,7 +133,7 @@
                     </div>
                 </div>
 
-                <div id='attraction-panel' class="panel panel-primary">
+                <!--<div id='attraction-panel' class="panel panel-primary">
                     <div class="panel-heading">
                         <h3 class="panel-title">Attraction</h3>
                     </div>
@@ -137,18 +146,24 @@
                         <br>
 
                     </div>
-                </div>
+                </div> -->
             </div>
-            <div class="col-xs-1"></div>
         </div>
     </div>
+</div>
+
+<!--Footer-->
+<div class="footer">
+    <p>Team Foobar</p>
+</div>
 
     <!--Javascript/JQuery Link-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
-        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+      integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+      crossorigin="anonymous"
+    ></script>
 
     <script src="./assets/springboard.js"></script>
-
-</body>
-
+  </body>
 </html>
