@@ -46,7 +46,11 @@
 
 ## Preview
 
+### Home Page
+
 <img width="1241" alt="Screen Shot 2020-11-24 at 3 51 03 PM" src="https://user-images.githubusercontent.com/60044459/100160514-f794c580-2e6c-11eb-82a5-29f74d0468bd.png">
+
+### Eats Page
 
 <img width="1194" alt="Screen Shot 2020-11-24 at 3 51 25 PM" src="https://user-images.githubusercontent.com/60044459/100160557-1004e000-2e6d-11eb-9f0a-81e981958d6e.png">
 
