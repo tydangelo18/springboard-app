@@ -1,7 +1,5 @@
 # Springboard
 
-![Springboard app screenshot](https://github.com/carmenjohnson512/springboard-app/blob/master/assets/springboard_app_screenshot.jpg?raw=true)
-
 ## Contributors
 
 - **Alba Osmanaj**
@@ -21,10 +19,6 @@
 
 - This app will feature different ways to make the most out of many domestic trips with weather forecasts, events in the area, and local restaurant reviews.
 
-## Flow
-
-![image](https://user-images.githubusercontent.com/60044459/83213650-495fcb80-a128-11ea-96ba-eeeb4eaab472.png)
-
 ## Technologies Used
 
 1. Languages and Frameworks
@@ -32,13 +26,10 @@
 - HTML5/CSS3
 - Javascript/JQuery
 - AJAX
-- Bulma
-- Bootstrap
 - Moment.js
 
 2. APIs
 
-- OpenWeatherMap
 - Zomato
 - Ticketmaster
 
@@ -47,12 +38,17 @@
 - As a traveler, I want to be able to look up local activities in a new city, so that I can plan my vacations more smoothly.
 - Given that I am a traveler looking for local activities in a new city, WHEN I input my location, THEN I am presented with a list of local restaraunts and local activites.
 
-
 ## Features
 
 - [x] Mobile Responsive
 - [x] Instant Access to weather forecasts, local restaurants, and events
 - [x] All searches locally stored
+
+## Preview
+
+<img width="1241" alt="Screen Shot 2020-11-24 at 3 51 03 PM" src="https://user-images.githubusercontent.com/60044459/100160514-f794c580-2e6c-11eb-82a5-29f74d0468bd.png">
+
+<img width="1194" alt="Screen Shot 2020-11-24 at 3 51 25 PM" src="https://user-images.githubusercontent.com/60044459/100160557-1004e000-2e6d-11eb-9f0a-81e981958d6e.png">
 
 ## Future Development
 
@@ -60,4 +56,3 @@
 2. App will operate on an international scale.
 3. Expanded restaurant options populated in the app.
 4. Dark Mode
-
