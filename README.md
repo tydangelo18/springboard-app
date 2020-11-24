@@ -17,7 +17,7 @@
 
 - **Springboard** is an app that helps travelers "fill in the blanks" of their planned vacation.
 
-- This app will feature different ways to make the most out of many domestic trips with weather forecasts, events in the area, and local restaurant reviews.
+- This app will feature different ways to make the most out of many domestic trips with events in the area and local restaurant reviews and information.
 
 ## Technologies Used
 
@@ -36,13 +36,12 @@
 ## User Story
 
 - As a traveler, I want to be able to look up local activities in a new city, so that I can plan my vacations more smoothly.
-- Given that I am a traveler looking for local activities in a new city, WHEN I input my location, THEN I am presented with a list of local restaraunts and local activites.
+- Given that I am a traveler looking for local activities in a new city, WHEN I input my location, THEN I am presented with a list of local restaraunts and events.
 
 ## Features
 
 - [x] Mobile Responsive
-- [x] Instant Access to weather forecasts, local restaurants, and events
-- [x] All searches locally stored
+- [x] Instant Access to local restaurants and events
 
 ## Preview
 
@@ -58,5 +57,6 @@
 
 1. Uber Ride Requests and UberEats straight from the App
 2. App will operate on an international scale.
-3. Expanded restaurant options populated in the app.
-4. Dark Mode
+3. Currency Converter.
+4. Expanded restaurant options populated in the app.
+5. Dark Mode
