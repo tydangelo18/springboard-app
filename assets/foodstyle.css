@@ -1,4 +1,4 @@
-*{
+* {
   padding: 0;
   margin: 0;
   text-decoration: none;
@@ -40,12 +40,12 @@ nav ul li a {
   font-size: 17px;
   padding: 7px 13px;
   border-radius: 3px;
-
 }
 
-a.active,a:hover {
+a.active,
+a:hover {
   background: #d23c3c;
-  transition: .5s;
+  transition: 0.5s;
 }
 
 .checkBtn {
@@ -94,7 +94,7 @@ a.active,a:hover {
 }
 
 #searchBtn:hover {
-  background:#d23c3c;
+  background: #d23c3c;
   color: white;
 }
 
@@ -118,8 +118,12 @@ a.active,a:hover {
 }
 
 @keyframes top {
-  0% {opacity: 0;}
-  100% {opacity: 1;}
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .burger-menu div {
@@ -127,25 +131,24 @@ a.active,a:hover {
   left: 100%;
   top: 64%;
   padding-right: 8px;
-  margin-top: -0.50em;
+  margin-top: -0.5em;
   line-height: 1.2;
   font-size: 10px;
   /* font-weight: 200; */
   vertical-align: middle;
   z-index: 99;
- }
-  
+}
 
 .expand {
-  display: block !important; 
- }
+  display: block !important;
+}
 
 .dropdown {
   display: flex;
   flex-direction: row;
   justify-content: center;
   margin-bottom: 15px;
-  z-index: 1000; 
+  z-index: 1000;
   position: relative;
   opacity: 0;
   animation-name: dropdown;
@@ -155,8 +158,12 @@ a.active,a:hover {
 }
 
 @keyframes dropdown {
-  0% {opacity: 0;}
-  100% {opacity: 1;}
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .dropdown.is-active {
@@ -171,7 +178,7 @@ a.active,a:hover {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  height: auto; 
+  height: auto;
   margin-bottom: 0px;
 }
 
@@ -185,7 +192,7 @@ a.active,a:hover {
   overflow-y: auto;
   float: none;
   width: 100%;
-  height: 200px; 
+  height: 200px;
 }
 
 .menu-active {
@@ -213,14 +220,12 @@ a.active,a:hover {
   font-size: 35px;
 }
 
-
 .food_container {
   width: 80%;
   display: flex;
   align-items: start;
   justify-content: space-evenly;
   margin-top: 50px;
-  
 }
 
 #restOneBox {
@@ -233,8 +238,12 @@ a.active,a:hover {
 }
 
 @keyframes restOne {
-  0% {opacity: 0;}
-  100% {opacity: 1;}
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 #restTwoBox {
@@ -247,8 +256,12 @@ a.active,a:hover {
 }
 
 @keyframes restTwo {
-  0% {opacity: 0;}
-  100% {opacity: 1;}
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 #restThreeBox {
@@ -261,8 +274,12 @@ a.active,a:hover {
 }
 
 @keyframes restThree {
-  0% {opacity: 0;}
-  100% {opacity: 1;}
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 #restFourBox {
@@ -275,11 +292,13 @@ a.active,a:hover {
 }
 
 @keyframes restFour {
-  0% {opacity: 0;}
-  100% {opacity: 1;}
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
-
-
 
 .mid-page {
   display: flex;
@@ -305,12 +324,10 @@ a.active,a:hover {
   border: 1px solid #000000;
 }
 
-
-.menu{
+.menu {
   overflow-y: scroll;
   max-height: 100px;
 }
-
 
 .restName {
   font-weight: bold;
@@ -337,48 +354,50 @@ a.active,a:hover {
 
 @media (max-width: 952px) {
   label.logo {
-      font-size: 30px;
-      padding-left: 50px;
+    font-size: 30px;
+    padding-left: 50px;
   }
 
   nav ul li a {
-      font-size: 16px;
+    font-size: 16px;
   }
 }
 
 @media (max-width: 858px) {
   .checkBtn {
-      display: block;
+    display: block;
   }
 
   ul {
-      position: fixed;
-      width: 100%;
-      height: 100vh;
-      background: #ed5050;
-      top: 80px;
-      left: -100%;
-      text-align: center;
-      transition: all .5s;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #ed5050;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
   }
 
   nav ul li {
-      display: block;
-      margin: 50px 0;
-      line-height: 30px;
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
   }
 
   nav ul li a {
-      font-size: 20px;
+    font-size: 20px;
   }
 
-  a:hover,a,active {
-      background: none;
-      color: #d23c3c;
+  a:hover,
+  a,
+  active {
+    background: none;
+    color: #d23c3c;
   }
 
   #check:checked ~ ul {
-      left: 0;
+    left: 0;
   }
 
   .food_container {
@@ -394,4 +413,3 @@ a.active,a:hover {
     margin-top: 30px;
   }
 }
-
