@@ -341,8 +341,9 @@ a:hover {
     margin-top: 265px;
   }
 
-  #eatsCard, #eventsCard {
-    padding-top: 30px;
+  #eatsCard,
+  #eventsCard {
+    margin-top: 30px;
   }
 
   #exploreDiv h1 {
@@ -367,6 +368,4 @@ a:hover {
   #mainsearchBtn {
     width: 75px;
   }
-
-
 }
