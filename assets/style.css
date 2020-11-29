@@ -338,7 +338,7 @@ a:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 265px;
+    margin-top: 285px;
   }
 
   #exploreDiv h1 {
@@ -346,12 +346,6 @@ a:hover {
   }
   #exploreDiv h2 {
     font-size: 18px;
-  }
-}
-
-@media (min-height: 667px) {
-  #cardDiv {
-    margin-top: 400px;
   }
 }
 
