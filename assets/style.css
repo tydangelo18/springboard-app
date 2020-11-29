@@ -338,7 +338,11 @@ a:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 285px;
+    margin-top: 265px;
+  }
+
+  #eatsCard, #eventsCard {
+    padding-top: 45px;
   }
 
   #exploreDiv h1 {
@@ -363,4 +367,6 @@ a:hover {
   #mainsearchBtn {
     width: 75px;
   }
+
+
 }
