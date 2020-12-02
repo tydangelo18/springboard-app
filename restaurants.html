@@ -3,140 +3,150 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Springboard - Restaurants</title>
+
     <script
       defer
       src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"
     ></script>
-    <script src="https://kit.fontawesome.com/db5e26bbb4.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/db5e26bbb4.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+      integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="./assets/foodstyle.css" />
+    <title>Springboard - Eats</title>
   </head>
   <body>
-  
-    <section>
-      <!--NavBar-->
-      <nav>
-          <input type="checkbox" id="check">
+    <div class="box-area">
+      <div class="wrapper">
+        <!--NavBar-->
+        <nav>
+          <input type="checkbox" id="check" />
           <label for="check" class="checkBtn">
-              <i class="fas fa-bars"></i>
+            <i class="fas fa-bars"></i>
           </label>
           <label class="logo" id="springLogo">Springboard</label>
           <ul>
-              <li>
-                  <form id="navBarSearch">
-                      <input type="text" name="" placeholder="Pick a City..." class="search-bar" id="searchBar">
-                      <input type="submit" name="" value="Explore" class="search-button" id="searchBtn">
-                  </form>
-              </li>
-              <li>
-                  <a class="navbar-item" href="./index.html" id="homeBtn">
-                      <span class="icon">
-                          <!--Each Icon will navigate the user to the corresponding page-->
-                          <i class="fas fa-home"></i>
-                      </span>
-                  </a>
-              </li>
-              <li>
-                  <a class="navbar-item" href="./restaurants.html" id="eatBtn">
-                      <span class="icon">
-                          <!--Each Icon will navigate the user to the corresponding page-->
-                          <i class="fas fa-utensils"></i>
-                      </span>
-                  </a>
-              </li>
-              <li>
-                  <a class="navbar-item" href="./events.html" id="eventBtn">
-                      <span class="icon">
-                          <!--Each Icon will navigate the user to the corresponding page-->
-                          <i class="fas fa-ticket-alt"></i>
-                      </span>
-                  </a>
-              </li>
-
+            <li>
+              <form id="navBarSearch">
+                <input
+                  type="text"
+                  name=""
+                  placeholder="Pick a City..."
+                  class="search-bar"
+                  id="searchBar"
+                />
+                <input
+                  type="submit"
+                  name=""
+                  value="Explore"
+                  class="search-button"
+                  id="searchBtn"
+                />
+              </form>
+            </li>
+            <li>
+              <a class="navbar-item" href="./index.html" id="homeBtn">
+                <span class="icon">
+                  <!--Each Icon will navigate the user to the corresponding page-->
+                  <i class="fas fa-home"></i>
+                </span>
+              </a>
+            </li>
+            <li>
+              <a class="navbar-item" href="./restaurants.html" id="eatBtn">
+                <span class="icon">
+                  <!--Each Icon will navigate the user to the corresponding page-->
+                  <i class="fas fa-utensils"></i>
+                </span>
+              </a>
+            </li>
+            <li>
+              <a class="navbar-item" href="./events.html" id="eventBtn">
+                <span class="icon">
+                  <!--Each Icon will navigate the user to the corresponding page-->
+                  <i class="fas fa-ticket-alt"></i>
+                </span>
+              </a>
+            </li>
           </ul>
-      </nav>
-    </section>
-
-  <!-----------  Webpage body content --------->
-  <section class="section">
-    <div id="top-content">
-      <div class ="topdiv"> 
-        <h1 class="title is-1" id="eventTitle">Restaurants</h1>
-        <!--JQuery will manipulate the DOM to display the inputted city from the search bar-->
-        <h1 class="title is-3" id="cityTitle"></h1>
+        </nav>
       </div>
 
-
-        <!--Dropdown Menu-->
-        <div class="dropdown">
-          <div class="dropdown-trigger">
-            <button class="button" aria-haspopup="true" id="cuisineDropdown" aria-controls="dropdown-menu">
-              <span id="cuisine-choice">What would you like to eat?</span>
-              <span class="icon is-small">
-                <i class="fas fa-angle-down" aria-hidden="true"></i>
-              </span>
-            </button>
+      <div class="banner-area">
+        <!-- Title and Dropdown Menu-->
+        <div id="top-content">
+          <div class="topdiv">
+            <h1 class="title is-1" id="eventTitle">Restaurants</h1>
+            <!--JQuery will manipulate the DOM to display the inputted city from the search bar-->
+            <h1 class="title is-3" id="cityTitle"></h1>
           </div>
-          <div class="dropdown-menu" id="dropdown-menu" role="menu">
-
-            <div class="dropdown-content">
+          <!--Dropdown Menu-->
+          <div class="dropdown">
+            <div class="dropdown-trigger">
+              <button
+                class="button"
+                aria-haspopup="true"
+                id="cuisineDropdown"
+                aria-controls="dropdown-menu"
+              >
+                <span id="cuisine-choice">What would you like to eat?</span>
+                <span class="icon is-small">
+                  <i class="fas fa-angle-down" aria-hidden="true"></i>
+                </span>
+              </button>
+            </div>
+            <div class="dropdown-menu" id="dropdown-menu" role="menu">
+              <div class="dropdown-content"></div>
             </div>
           </div>
         </div>
-    </div>
-  </section>
-            <!-- Use geolocation in .js to grab users current location-->
-            
+      </div>
 
-
-      <!--Moved sidebar menu and all the restaurants cards into one div to arrange it on the same line--> 
-      <div class ="mid-page">
-  
-          <!----Here is the container where the restaurants will display------->
-        <section class="food_container">
+      <div class="content-area">
+        <div class="food-container">
           <!--Each will be manipulated by the DOM-->
-            <div class="block">
-              <div class="box" id="restOneBox">
-                <!--restaurant elements/details will be injected via jquery-->
-              </div>
+          <div class="block">
+            <div class="box" id="restOneBox">
+              <!--restaurant elements/details will be injected via jquery-->
             </div>
-            <!--Each will be manipulated by the DOM-->
-            <div class="block">
-              <div class="box" id="restTwoBox">
-                <!--restaurant elements/details will be injected via jquery-->
-              </div>
+          </div>
+          <!--Each will be manipulated by the DOM-->
+          <div class="block">
+            <div class="box" id="restTwoBox">
+              <!--restaurant elements/details will be injected via jquery-->
             </div>
-            <!--Each will be manipulated by the DOM-->
-            <div class="block">
-              <div class="box" id="restThreeBox">
-                <!--restaurant elements/details will be injected via jquery-->
-              </div>
+          </div>
+          <!--Each will be manipulated by the DOM-->
+          <div class="block">
+            <div class="box" id="restThreeBox">
+              <!--restaurant elements/details will be injected via jquery-->
             </div>
-            <!--Each will be manipulated by the DOM-->
-            <div class="block">
-              <div class="box" id="restFourBox">
-                <!--restaurant elements/details will be injected via jquery-->
-              </div>
+          </div>
+          <!--Each will be manipulated by the DOM-->
+          <div class="block">
+            <div class="box" id="restFourBox">
+              <!--restaurant elements/details will be injected via jquery-->
             </div>
-          </section>    
-        </div> 
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!--Footer-->
     <div class="footer">
       <p>Team Foobar</p>
-  </div>
-  
-</body>
-
-<!--Javascript/JQuery Link-->
+    </div>
   </body>
+
   <script
     src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
     integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
     crossorigin="anonymous"
   ></script>
-  <script src="https://bulma.io/vendor/clipboard-1.7.1.min.js"></script>
-  <script src="https://bulma.io/vendor/js.cookie-2.1.4.min.js"></script>
-  <script src="https://bulma.io/vendor/native.js"></script>
   <script src="./assets/springboard.js"></script>
 </html>

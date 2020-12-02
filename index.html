@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
     <script
       defer
       src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"
@@ -18,108 +17,119 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="./assets/style.css" />
+    <title>Welcome to Springboard</title>
   </head>
   <body>
-    <section>
-      <!--NavBar-->
-      <nav>
-        <input type="checkbox" id="check" />
-        <label for="check" class="checkBtn">
-          <i class="fas fa-bars"></i>
-        </label>
-        <label class="logo" id="springLogo">Springboard</label>
-        <ul>
-          <li>
+    <div class="box-area">
+      <div class="wrapper">
+        <!--NavBar-->
+        <nav>
+          <input type="checkbox" id="check" />
+          <label for="check" class="checkBtn">
+            <i class="fas fa-bars"></i>
+          </label>
+          <label class="logo" id="springLogo">Springboard</label>
+          <ul>
+            <li>
+              <form id="navBarSearch">
+                <input
+                  type="text"
+                  name=""
+                  placeholder="Pick a City..."
+                  class="search-bar"
+                  id="searchBar"
+                />
+                <input
+                  type="submit"
+                  name=""
+                  value="Explore"
+                  class="search-button"
+                  id="searchBtn"
+                />
+              </form>
+            </li>
+            <li>
+              <a class="navbar-item" href="./index.html" id="homeBtn">
+                <span class="icon">
+                  <!--Each Icon will navigate the user to the corresponding page-->
+                  <i class="fas fa-home"></i>
+                </span>
+              </a>
+            </li>
+            <li>
+              <a class="navbar-item" href="./restaurants.html" id="eatBtn">
+                <span class="icon">
+                  <!--Each Icon will navigate the user to the corresponding page-->
+                  <i class="fas fa-utensils"></i>
+                </span>
+              </a>
+            </li>
+            <li>
+              <a class="navbar-item" href="./events.html" id="eventBtn">
+                <span class="icon">
+                  <!--Each Icon will navigate the user to the corresponding page-->
+                  <i class="fas fa-ticket-alt"></i>
+                </span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="banner-area">
+        <!--Top Content Div-->
+        <div id="top-content">
+          <!--Title-->
+          <div id="exploreDiv">
+            <h1 id="homeTitle">What City Are You Exploring?</h1>
+            <!--JQuery will manipulate the DOM to display the inputted city from Search Bar-->
+            <h2 id="cityTitle"></h2>
+          </div>
+
+          <!--Search Bar-->
+          <div id="mainsearchBarDiv">
             <form id="navBarSearch">
               <input
                 type="text"
                 name=""
                 placeholder="Pick a City..."
                 class="search-bar"
-                id="searchBar"
+                id="mainsearchBar"
               />
               <input
                 type="submit"
                 name=""
                 value="Explore"
                 class="search-button"
-                id="searchBtn"
+                id="mainsearchBtn"
               />
             </form>
-          </li>
-          <li>
-            <a class="navbar-item" href="./index.html" id="homeBtn">
-              <span class="icon">
-                <!--Each Icon will navigate the user to the corresponding page-->
-                <i class="fas fa-home"></i>
-              </span>
-            </a>
-          </li>
-          <li>
-            <a class="navbar-item" href="./restaurants.html" id="eatBtn">
-              <span class="icon">
-                <!--Each Icon will navigate the user to the corresponding page-->
-                <i class="fas fa-utensils"></i>
-              </span>
-            </a>
-          </li>
-          <li>
-            <a class="navbar-item" href="./events.html" id="eventBtn">
-              <span class="icon">
-                <!--Each Icon will navigate the user to the corresponding page-->
-                <i class="fas fa-ticket-alt"></i>
-              </span>
-            </a>
-          </li>
-        </ul>
-      </nav>
-    </section>
-
-    <div id="top-content">
-      <!--Title-->
-      <div id="exploreDiv">
-        <h1 id="homeTitle">What City Are You Exploring?</h1>
-        <!--JQuery will manipulate the DOM to display the inputted city from Search Bar-->
-        <h2 id="cityTitle"></h2>
-      </div>
-
-      <!--Search Bar-->
-      <div id="mainsearchBarDiv">
-        <form id="navBarSearch">
-          <input
-            type="text"
-            name=""
-            placeholder="Pick a City..."
-            class="search-bar"
-            id="mainsearchBar"
-          />
-          <input
-            type="submit"
-            name=""
-            value="Explore"
-            class="search-button"
-            id="mainsearchBtn"
-          />
-        </form>
-      </div>
-    </div>
-
-    <!--NavCards-->
-    <div id="cardDiv">
-      <div class="container" id="eatsCard">
-        <img src="./assets/restaurant.jpg" alt="weather" class="image" />
-        <div class="overlay">
-          <a href="./restaurants.html">
-            <div class="text">Find Eats</div>
-          </a>
+          </div>
         </div>
       </div>
-      <div class="container" id="eventsCard">
-        <img src="./assets/event.jpg" alt="weather" class="image" />
-        <div class="overlay">
-          <a href="./events.html">
-            <div class="text">Attend Events</div>
-          </a>
+
+      <div class="content-area">
+        <div class="wrapper">
+          <!--Cards will live in this div-->
+          <!--NavCards-->
+          <div id="cardDiv">
+            <div class="container" id="eatsCard">
+              <img src="./restaurant.jpg" alt="eats" class="image" />
+              <div class="overlay">
+                <a href="#">
+                  <div class="text">Find Eats</div>
+                </a>
+              </div>
+            </div>
+            <div class="container" id="eventsCard">
+              <img src="./event.jpg" alt="events" class="image" />
+              <div class="overlay">
+                <a href="#">
+                  <div class="text">Attend Events</div>
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

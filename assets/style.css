@@ -10,6 +10,7 @@ body {
   font-family: sans-serif;
 }
 
+/* Navbar */
 nav {
   background: #ed5050;
   height: 80px;
@@ -62,6 +63,7 @@ a:hover {
   display: none;
 }
 
+/* Top */
 #top-content {
   background-image: url('./homepage.jpg');
   background-size: cover;
@@ -70,6 +72,7 @@ a:hover {
   min-height: 40vh;
 }
 
+/* Navbar Search */
 #searchBar {
   border-radius: 25px 0 0 25px;
   padding: 0 5px;
@@ -98,6 +101,7 @@ a:hover {
   color: white;
 }
 
+/* Main Search Bar */
 #mainsearchBar {
   border-radius: 25px 0 0 25px;
   padding: 0 5px;
@@ -162,6 +166,7 @@ a:hover {
   }
 }
 
+/* Bottom */
 #cardDiv {
   display: flex;
   flex-direction: row;
@@ -187,6 +192,7 @@ a:hover {
   object-fit: cover;
   box-shadow: 2px 2px #989898;
 }
+
 
 .overlay {
   position: absolute;
@@ -216,6 +222,8 @@ a:hover {
   transform: translate(-50%, -50%);
   text-align: center;
 }
+
+/* Bottom */
 
 #eatsCard {
   opacity: 0;
@@ -253,6 +261,7 @@ a:hover {
   }
 }
 
+/* May not need anymore? */
 #weatherCard {
   opacity: 0;
   position: relative;
@@ -271,6 +280,7 @@ a:hover {
   }
 }
 
+/* Footer */
 .footer {
   position: fixed;
   left: 0;
