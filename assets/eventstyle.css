@@ -1,29 +1,56 @@
+/* Page Layout */
 * {
-  padding: 0;
   margin: 0;
-  text-decoration: none;
-  list-style: none;
-  box-sizing: border-box;
+  padding: 0;
 }
 
-body {
-  font-family: sans-serif;
-}
-
+/* Navbar */
 nav {
+  height: 100px;
   background: #ed5050;
-  height: 80px;
   width: 100%;
+  z-index: 12;
+  position: fixed;
 }
 
 label.logo {
   color: white;
-  font-size: 35px;
-  line-height: 80px;
+  font-size: 40px;
+  line-height: 100px;
   padding: 0 100px;
   font-weight: bold;
 }
 
+/** Navbar Search */
+#searchBar {
+  border-radius: 25px 0 0 25px;
+  padding: 0 5px;
+  height: 22px;
+  width: 120px;
+  border: none;
+  outline: none;
+}
+
+#searchBtn {
+  border-radius: 0 25px 25px 0;
+  padding: 0 5px;
+  position: relative;
+  left: -5px;
+  height: 22px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: white;
+  color: #ed5050;
+  border-left: 1px solid #ed5050;
+}
+
+#searchBtn:hover {
+  background: #d23c3c;
+  color: white;
+}
+
+/** Navbar Icons */
 nav ul {
   float: right;
   margin-right: 20px;
@@ -31,7 +58,7 @@ nav ul {
 
 nav ul li {
   display: inline-block;
-  line-height: 80px;
+  line-height: 100px;
   margin: 0 5px;
 }
 
@@ -62,40 +89,15 @@ a:hover {
   display: none;
 }
 
-#top-content {
-  background-image: url('./event.jpg');
+/** Image, header, and city title **/
+.banner-area {
+  width: 100%;
+  height: 500px;
+  position: fixed;
+  top: 100px;
+  background-image: url(event.jpg);
   background-size: cover;
-  position: absolute;
-  min-width: 100vw;
-  min-height: 40vh;
-}
-
-#searchBar {
-  border-radius: 25px 0 0 25px;
-  padding: 0 5px;
-  height: 22px;
-  width: 120px;
-  border: none;
-  outline: none;
-}
-
-#searchBtn {
-  border-radius: 0 25px 25px 0;
-  padding: 0 5px;
-  position: relative;
-  left: -5px;
-  height: 22px;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  background: white;
-  color: #ed5050;
-  border-left: 1px solid #ed5050;
-}
-
-#searchBtn:hover {
-  background: #d23c3c;
-  color: white;
+  background-position: center center;
 }
 
 .title {
@@ -126,193 +128,22 @@ a:hover {
   }
 }
 
-#mainsearchBar {
-  border-radius: 25px 0 0 25px;
-  padding: 0 5px;
-  height: 40px;
-  width: 300px;
-  border: 1px solid #ed5050;
-  outline: none;
-}
-
-#mainsearchBtn {
-  border-radius: 0 25px 25px 0;
-  padding: 0 5px;
+/** Event Box */
+.content-area {
+  width: 100%;
   position: relative;
-  left: -5px;
-  height: 40px;
-  width: 100px;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  background: #ed5050;
-  color: white;
-}
-
-#mainsearchBtn:hover {
-  background: #d23c3c;
-  color: white;
-}
-
-#exploreDiv,
-#mainsearchBarDiv {
+  top: 450px;
+  background: #f4efef;
+  height: 840px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 20px;
-}
-
-#exploreDiv {
-  line-height: 1.7;
-}
-
-#exploreDiv h1 {
-  color: white;
-  font-size: 50px;
-  opacity: 0;
-  position: relative;
-  animation-name: title;
-  animation-duration: 4s;
-  animation-fill-mode: forwards;
-}
-
-#eventTitle {
-  color: white;
-  font-size: 50px;
-}
-
-#cityTitle {
-  color: white;
-  font-size: 35px;
-}
-
-@keyframes title {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-#cardDiv {
-  display: flex;
-  flex-direction: row;
   justify-content: center;
-  margin-top: 270px;
-  min-width: 100vw;
-  min-height: 55vh;
-  position: relative;
-  bottom: 0;
-  color: #ffffff;
 }
 
 #eventBoxTitle {
   color: #ed5050;
 }
 
-.panel-heading {
-  padding-bottom: 5px;
-}
-
-.container {
-  position: relative;
-  width: 300px;
-  height: 300px;
-  margin: 45px;
-}
-
-.image {
-  display: block;
-  width: 300px;
-  height: 300px;
-  object-fit: cover;
-  box-shadow: 2px 2px #989898;
-}
-
-.overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: 0.5s ease;
-  background-color: #ed5050;
-}
-
-.container:hover .overlay {
-  opacity: 1;
-}
-
-.text {
-  color: white;
-  font-size: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
-
-#eatsCard {
-  opacity: 0;
-  position: relative;
-  animation-name: eats;
-  animation-duration: 2.5s;
-  animation-delay: 1s;
-  animation-fill-mode: forwards;
-}
-
-@keyframes eats {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-#eventsCard {
-  opacity: 0;
-  position: relative;
-  animation-name: events;
-  animation-duration: 2.5s;
-  animation-delay: 1.5s;
-  animation-fill-mode: forwards;
-}
-
-@keyframes events {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-#weatherCard {
-  opacity: 0;
-  position: relative;
-  animation-name: weather;
-  animation-duration: 2.5s;
-  animation-delay: 2s;
-  animation-fill-mode: forwards;
-}
-
-@keyframes weather {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
+/* Footer */
 .footer {
   position: fixed;
   left: 0;
