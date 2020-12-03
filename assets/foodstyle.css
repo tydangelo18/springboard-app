@@ -235,7 +235,6 @@ a:hover {
 .food-container {
   display: flex;
   justify-content: center;
-  justify-content: space-between;
   padding: 50px;
 }
 
@@ -246,6 +245,7 @@ a:hover {
   animation-duration: 2.5s;
   animation-delay: 2s;
   animation-fill-mode: forwards;
+  margin: 15px;
 }
 
 @keyframes restOne {
@@ -264,6 +264,7 @@ a:hover {
   animation-duration: 2.5s;
   animation-delay: 2.5s;
   animation-fill-mode: forwards;
+  margin: 15px;
 }
 
 @keyframes restTwo {
@@ -282,6 +283,7 @@ a:hover {
   animation-duration: 2.5s;
   animation-delay: 3s;
   animation-fill-mode: forwards;
+  margin: 15px;
 }
 
 @keyframes restThree {
@@ -300,6 +302,7 @@ a:hover {
   animation-duration: 2.5s;
   animation-delay: 3.5s;
   animation-fill-mode: forwards;
+  margin: 15px;
 }
 
 @keyframes restFour {
@@ -366,6 +369,7 @@ a:hover {
 @media (max-width: 858px) {
   .checkBtn {
     display: block;
+    padding: 11px;
   }
 
   ul {
@@ -399,4 +403,22 @@ a:hover {
   #check:checked ~ ul {
     left: 0;
   }
+
+  #eventTitle {
+    font-size: 22px;
+  }
+
+  #cityTitle {
+    font-size: 18px;
+  }
+
+  .food-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #restOneBox, #restTwoBox, #restThreeBox, #restFourBox {
+    margin: 10px;
+  } 
 }

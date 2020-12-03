@@ -143,6 +143,18 @@ a:hover {
   color: #ed5050;
 }
 
+.panel-body {
+  width: 500px;
+  margin: 30px;
+  padding: 20px;
+  border: 2px solid #000000;
+  border-radius: 1em 1em 1em 1em;
+}
+
+#panelNav {
+  width: 700px;
+}
+
 /* Footer */
 .footer {
   position: fixed;
@@ -174,6 +186,7 @@ a:hover {
 @media (max-width: 858px) {
   .checkBtn {
     display: block;
+    padding: 11px;
   }
 
   ul {
@@ -206,5 +219,17 @@ a:hover {
 
   #check:checked ~ ul {
     left: 0;
+  }
+
+  #eventTitle {
+    font-size: 22px;
+  }
+
+  #cityTitle {
+    font-size: 18px;
+  }
+
+  #eventBox {
+    margin: 20px;
   }
 }
