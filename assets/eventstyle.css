@@ -4,6 +4,10 @@
   padding: 0;
 }
 
+body {
+  font-family: 'Quicksand', sans-serif;
+}
+
 /* Navbar */
 #navBarTop {
   height: 100px;
@@ -160,7 +164,6 @@ a:hover {
 
 #panelNav {
   padding: 18px;
-  
 }
 
 #panelNav ul {
