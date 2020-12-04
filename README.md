@@ -47,13 +47,33 @@
 
 - Live Link [here](https://tydangelo18.github.io/springboard-app/).
 
-### Home Page
+### Desktop
 
-<img width="1241" alt="Screen Shot 2020-11-24 at 3 51 03 PM" src="https://user-images.githubusercontent.com/60044459/100160514-f794c580-2e6c-11eb-82a5-29f74d0468bd.png">
+#### Home Page
+
+![Screen Shot 2020-12-04 at 4 58 02 PM](https://user-images.githubusercontent.com/60044459/101224008-093b5180-3653-11eb-9c39-f19d0a4eb772.png)
+
+#### Eats Page
+
+![Screen Shot 2020-12-04 at 4 59 40 PM](https://user-images.githubusercontent.com/60044459/101224029-1c4e2180-3653-11eb-8889-78eab01681f6.png)
+
+#### Events Page
+
+![Screen Shot 2020-12-04 at 5 00 15 PM](https://user-images.githubusercontent.com/60044459/101224036-240dc600-3653-11eb-9b02-7d37116c36c5.png)
+
+### Mobile
+
+#### Home Page
+
+![Screen Shot 2020-12-04 at 5 01 47 PM](https://user-images.githubusercontent.com/60044459/101224045-31c34b80-3653-11eb-83df-feb2831ca599.png)
 
 ### Eats Page
 
-<img width="1194" alt="Screen Shot 2020-11-24 at 3 51 25 PM" src="https://user-images.githubusercontent.com/60044459/100160557-1004e000-2e6d-11eb-9f0a-81e981958d6e.png">
+![Screen Shot 2020-12-04 at 5 02 37 PM](https://user-images.githubusercontent.com/60044459/101224061-3ab41d00-3653-11eb-88ce-7059fcbbe61f.png)
+
+#### Events Page
+
+![Screen Shot 2020-12-04 at 5 03 24 PM](https://user-images.githubusercontent.com/60044459/101224079-41db2b00-3653-11eb-8d07-119ca9331fde.png)
 
 ## Future Development
 
