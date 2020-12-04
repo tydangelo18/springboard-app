@@ -249,7 +249,7 @@ a:hover {
   animation-duration: 2.5s;
   animation-delay: 2s;
   animation-fill-mode: forwards;
-  margin: 15px;
+  
 }
 
 @keyframes restOne {
@@ -268,7 +268,7 @@ a:hover {
   animation-duration: 2.5s;
   animation-delay: 2.5s;
   animation-fill-mode: forwards;
-  margin: 15px;
+  
 }
 
 @keyframes restTwo {
@@ -287,7 +287,7 @@ a:hover {
   animation-duration: 2.5s;
   animation-delay: 3s;
   animation-fill-mode: forwards;
-  margin: 15px;
+  
 }
 
 @keyframes restThree {
@@ -306,7 +306,7 @@ a:hover {
   animation-duration: 2.5s;
   animation-delay: 3.5s;
   animation-fill-mode: forwards;
-  margin: 15px;
+  
 }
 
 @keyframes restFour {
@@ -316,6 +316,14 @@ a:hover {
   100% {
     opacity: 1;
   }
+}
+
+#restOneBox, #restTwoBox, #restThreeBox, #restFourBox {
+  background-color: #e8e8e8;
+  border: 1.25px solid #000000;
+  border-radius: 1em 1em 1em 1em;
+  box-shadow: 0px 0px 15px #888888;
+  margin: 30px;
 }
 
 .box {
@@ -414,6 +422,10 @@ a:hover {
 
   #cityTitle {
     font-size: 18px;
+  }
+
+  .content-area {
+    height: 900px;
   }
 
   .food-container {
